@@ -41,8 +41,8 @@ export const Header = () => {
             <div className="submenu">
               <h1 onClick={() => navigateToPage('/solar-panels')}>Солнечные панели</h1>
               <h1 onClick={() => navigateToPage('/inverters')}>Инверторы</h1>
-              <h1>Бесперебойники</h1>
-              <h1>Крепления</h1>
+              <h1 onClick={() => navigateToPage('/ups')}>Бесперебойники</h1>
+              <h1 onClick={() => navigateToPage('/mountings')}>Крепления</h1>
             </div>
           )}
           <h1 onClick={() => scrollToSection('solution')}>Рiшення</h1>
