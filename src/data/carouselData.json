@@ -1,0 +1,12 @@
+{
+  "slides": [
+    {
+      "src": "/images/slider.png",
+      "alt": "Image 1 for carousel"
+    },
+    {
+      "src": "/images/slider2.png",
+      "alt": "Image 2 for carousel"
+    }
+  ]
+}
