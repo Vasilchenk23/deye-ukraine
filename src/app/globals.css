@@ -414,7 +414,7 @@ body {
 .buy-button {
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #28a745;
+  background-color: hsl(205, 70%, 52%);
   color: white;
   border: none;
   border-radius: 5px;
@@ -422,7 +422,7 @@ body {
 }
 
 .buy-button:hover {
-  background-color: #218838;
+  background-color: hsl(205, 61%, 48%);
 }
 
 @media (max-width: 768px) {
@@ -461,7 +461,7 @@ body {
 
 .contact-input,
 .contact-textarea {
-  width: 100%;
+  width: 96%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ddd;
@@ -643,6 +643,7 @@ body {
 
 .tab-content .tab-panel {
   display: block;
+  padding: 0 20px;
 }
 
 @keyframes fadeIn {
@@ -674,15 +675,22 @@ body {
   margin-left: 20px;
 }
 
-.panel-price,
+.panel-price {
+  margin: 0;
+  font-size: 30px;
+  color: green;
+}
 .panel-status {
   margin: 0;
-  font-size: 16px;
+  font-size: 30px;
 }
-
+.panel-title {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 @media (min-width: 768px) {
   .panel-image {
-    width: 250px; 
+    width: 550px; 
   }
 
   .panel-info {
@@ -701,6 +709,8 @@ body {
 
   .panel-info {
     margin-top: 10px;
+    width: 150%;
+
   }
 
   .panel-image {
@@ -711,6 +721,9 @@ body {
   }
   .get-button::after{
     border-radius: 0px;
+  }
+  .panel-status {
+    width: 100%;
   }
 }
 

@@ -8,15 +8,23 @@ export default function TabbedContent({ data }) {
     setActiveTab(tab);
   };
 
+  const getStatusColor = (status) => {
+    if (status === "На замовлення") return "red";
+    if (status === "Є в наявності") return "green";
+    return "black";
+  };
+
   return (
     <div className="panel-container">
       <h1 className="panel-title">{data.name}</h1>
       <div className="panel-main">
         <img className="panel-image" src={data.image_url} alt={data.name} />
         <div className="panel-info">
-          <p className="panel-price">Ціна: {data.price}</p>
-          <br></br>
-          <p className="panel-status">{data.status}</p>
+          <p className="panel-price"><b>{data.price}</b> ₴</p>
+          <br />
+          <p className="panel-status" style={{ color: getStatusColor(data.status) }}>
+            {data.status}
+          </p>
         </div>
       </div>
       <div className="get-button-container">

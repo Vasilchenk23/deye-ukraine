@@ -30,8 +30,8 @@ export default async function Goods() {
                 <p className="product-status">{product.status}</p>
                 <p className="product-price">Цена: {product.price} грн</p>
               </div>
-            </a>
             <button className="buy-button">Купити</button>
+            </a>
           </div>
         ))}
       </div>
