@@ -212,9 +212,9 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-.logo-item img {
+/* .logo-item img {
   max-height: 50px;
-}
+} */
 
 .item-menu {
   display: flex;
@@ -526,7 +526,6 @@ body {
 .product-image {
   width: 100%;
   height: auto;
-  border: 1ppx solid red;
   border-radius: 8px;
 }
 
@@ -689,4 +688,5 @@ body {
   font-size: 12px;
   color: #777;
 }
+
 

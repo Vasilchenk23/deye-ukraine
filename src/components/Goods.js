@@ -17,6 +17,7 @@ export default async function Goods() {
       <div className="products">
         {data.map((product) => (
           <div key={product.id} className="product-card">
+            <a href={`/inverters/${encodeURIComponent(product.name)}`} className="product-link">
               <div>
                 <Image
                   src={product.image_url}
@@ -25,10 +26,12 @@ export default async function Goods() {
                   height={1080}
                   className="product-image"
                 />
-                <h2>{product.name}</h2>
-                <p>{product.status}</p>
-                <p>Цена: {product.price} грн</p>
+                <h2 className="product-title">{product.name}</h2>
+                <p className="product-status">{product.status}</p>
+                <p className="product-price">Цена: {product.price} грн</p>
               </div>
+            </a>
+            <button className="buy-button">Купити</button>
           </div>
         ))}
       </div>
