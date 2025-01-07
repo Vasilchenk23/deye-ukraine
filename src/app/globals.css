@@ -715,18 +715,8 @@ html {
 
   }
 
-  .panel-price {
-    width: 100%;
-  }
-
   .panel-image {
-    width: 170%;
-    height: 100%; 
-    margin-left: 40px;
-  }
-  .container-image {
-    display: flex;
-    justify-content: center;
+    width: 100%; 
   }
   .get-button {
     width: 100vw;

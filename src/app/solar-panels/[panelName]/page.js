@@ -2,7 +2,7 @@ import { supabase } from "@/db/supabaseClient";
 import TabbedContent from "@/components/TabbedContent";
 
 export default async function PanelPage({ params }) {
-  const { panelName } = params;
+  const { panelName } = await params;
 
   const { data, error } = await supabase
     .from("solar-panels")
