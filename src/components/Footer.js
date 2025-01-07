@@ -1,6 +1,45 @@
-import React from "react";
+"use client";
+import React, { useState } from 'react';
 
 export const Footer = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    email: 'no email',
+    message: 'no message',
+  });
+
+  const [status, setStatus] = useState('');
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus('Зараз вам перезвонять!');
+        setFormData({ name: '', phone: ''});
+        setTimeout(() => setStatus(''), 4000); // Скрыть сообщение через 4 секунды
+      } else {
+        setStatus('Помилка при замовленні дзвінка.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setStatus('Помилка сервера.');
+    }
+  };
+
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -19,10 +58,23 @@ export const Footer = () => {
 
         <div className="footer-callback">
           <h3>Замовити зворотній дзвінок</h3>
-          <form className="callback-form">
-            <input type="text" placeholder="Ім'я *" required />
-            <input type="tel" placeholder="Телефон *" required />
-            <input type="text" placeholder="Зручний час для дзвінка" />
+          <form className="callback-form" onSubmit={handleSubmit}>
+            <input
+              type="text"
+              name="name"
+              placeholder="Ім'я *"
+              required
+              value={formData.name}
+              onChange={handleChange}
+            />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Телефон *"
+              required
+              value={formData.phone}
+              onChange={handleChange}
+            />
             <button type="submit">Замовити</button>
           </form>
         </div>
@@ -30,6 +82,11 @@ export const Footer = () => {
       <div className="footer-bottom">
         <p>© DeyeUkraine 2025</p>
       </div>
+      {status && (
+        <div className="status-message">
+          <p>{status}</p>
+        </div>
+      )}
     </footer>
   );
 };

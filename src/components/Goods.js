@@ -19,7 +19,7 @@ export default async function Goods() {
 
   return (
     <div className="goods-container">
-      <h1 id="goods">Товары</h1>
+      <h1 id="goods">Товари</h1>
       <div className="products">
         {data.map((product) => (
           <div key={product.id} className="product-card">
@@ -36,7 +36,7 @@ export default async function Goods() {
                 <p className="product-status"
                 style={{ color: getStatusColor(product.status) }}
                 >{product.status}</p>
-                <p className="product-price">Цена: {product.price} грн</p>
+                <p className="product-price">Цiна: {product.price} грн</p>
               </div>
             <button className="buy-button">Купити</button>
             </a>

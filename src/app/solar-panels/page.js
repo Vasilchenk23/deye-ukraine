@@ -26,7 +26,7 @@ export default async function SolarPanel() {
                 className="product-image"
               />
               <h2>{panel.name}</h2>
-              <p>Ціна: {panel.price} грн</p>
+              <p>Ціна: {panel.price}</p>
               <p
                 style={{
                   color: panel.status === "На замовлення" ? "red" : panel.status === "Є в наявності" ? "green" : "black"
@@ -34,7 +34,7 @@ export default async function SolarPanel() {
               >
                 {panel.status}
               </p>
-              <button className="button-get-pan">Придбати</button>
+              <button className="button-get-panel">Придбати</button>
             </a>
           </div>
         ))}
