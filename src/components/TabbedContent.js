@@ -43,6 +43,12 @@ export default function TabbedContent({ data }) {
         >
           Технічна документація
         </button>
+        <button
+          onClick={() => handleTabClick("docx")}
+          className={`tab ${activeTab === "docx" ? "active" : ""}`}
+        >
+          Документація
+        </button>
       </div>
 
       <div className="tab-content">
@@ -56,6 +62,12 @@ export default function TabbedContent({ data }) {
           <div className="tab-panel">
             <h2>Технічна документація</h2>
             <p>{data.tech}</p>
+          </div>
+        )}
+        {activeTab === "docx" && (
+          <div className="tab-panel">
+            <h2>Документацiя</h2>
+            <p>{data.docx}</p>
           </div>
         )}
       </div>

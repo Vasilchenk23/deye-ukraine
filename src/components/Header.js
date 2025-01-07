@@ -57,7 +57,7 @@ export const Header = () => {
           {productsMenuOpen && (
             <div className="submenu">
               <h1 onClick={() => navigateToPage("/solar-panels")}>Сонячні панелі</h1>
-              <h1 onClick={() => navigateToPage("/batteries")}>Батареї</h1>
+              <h1 onClick={() => navigateToPage("/battery")}>Акумулятори</h1>
               <h1 onClick={() => navigateToPage("/inverters")}>Інвертори</h1>
               <h1 onClick={() => navigateToPage("/accessories")}>Аксесуари</h1>
             </div>
