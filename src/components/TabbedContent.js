@@ -18,7 +18,7 @@ export default function TabbedContent({ data }) {
     <div className="panel-container">
       <h1 className="panel-title">{data.name}</h1>
       <div className="panel-main">
-        <img className="panel-image" src={data.image_url} alt={data.name} />
+       <div className="container-image"><img className="panel-image" src={data.image_url} alt={data.name} /></div> 
         <div className="panel-info">
           <p className="panel-price"><b>{data.price}</b> ₴</p>
           <br />

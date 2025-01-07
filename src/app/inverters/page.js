@@ -29,7 +29,7 @@ export default async function Inverters() {
               >
                 {invertor.status}
               </p>
-              <button>Придбати</button>
+              <button className="button-get-invertot">Придбати</button>
             </a>
           </div>
         ))}

@@ -11,6 +11,12 @@ export default async function Goods() {
     return <div>Ошибка загрузки данных</div>;
   }
 
+  const getStatusColor = (status) => {
+    if (status === "На замовлення") return "red";
+    if (status === "Є в наявності") return "green";
+    return "black";
+  };
+
   return (
     <div className="goods-container">
       <h1 id="goods">Товары</h1>
@@ -27,7 +33,9 @@ export default async function Goods() {
                   className="product-image"
                 />
                 <h2 className="product-title">{product.name}</h2>
-                <p className="product-status">{product.status}</p>
+                <p className="product-status"
+                style={{ color: getStatusColor(product.status) }}
+                >{product.status}</p>
                 <p className="product-price">Цена: {product.price} грн</p>
               </div>
             <button className="buy-button">Купити</button>
