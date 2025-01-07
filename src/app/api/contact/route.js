@@ -20,7 +20,7 @@ export async function POST(req) {
 
     await transporter.sendMail({
       from: email,
-      to: process.env.EMAIL, //
+      to: process.env.EMAIL, 
       subject: `Новое сообщение от ${name}`,
       text: `Имя: ${name}\nТелефон: ${phone}\nEmail: ${email}\nСообщение: ${message}`,
     });
