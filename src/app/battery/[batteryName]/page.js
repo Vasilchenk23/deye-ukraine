@@ -7,7 +7,7 @@ export default async function BatteryPage({ params }) {
   const { data, error } = await supabase
     .from("battery")
     .select("*")
-    .eq("name", decodeURIComponent(batteryName)) 
+    .eq("slug", decodeURIComponent(batteryName)) 
     .single();
 
   if (error) {

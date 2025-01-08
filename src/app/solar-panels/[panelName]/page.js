@@ -7,7 +7,7 @@ export default async function PanelPage({ params }) {
   const { data, error } = await supabase
     .from("solar-panels")
     .select("*")
-    .eq("name", decodeURIComponent(panelName))
+    .eq("slug", decodeURIComponent(panelName))
     .single();
 
   if (error) {

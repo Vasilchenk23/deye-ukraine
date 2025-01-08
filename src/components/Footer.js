@@ -5,8 +5,6 @@ export const Footer = () => {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
-    email: 'no email',
-    message: 'no message',
   });
 
   const [status, setStatus] = useState('');
@@ -19,7 +17,7 @@ export const Footer = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('/api/footer-contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -28,11 +26,12 @@ export const Footer = () => {
       });
 
       if (response.ok) {
-        setStatus('Зараз вам перезвонять!');
+        setStatus('Зараз вам зателефонують!');
         setFormData({ name: '', phone: ''});
-        setTimeout(() => setStatus(''), 4000); // Скрыть сообщение через 4 секунды
+        setTimeout(() => setStatus(''), 4000); 
       } else {
         setStatus('Помилка при замовленні дзвінка.');
+        setTimeout(() => setStatus(''), 4000); 
       }
     } catch (error) {
       console.error('Error submitting form:', error);

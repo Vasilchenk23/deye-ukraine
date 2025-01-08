@@ -33,6 +33,7 @@ export const Contact = () => {
         setTimeout(() => setStatus(''), 4000); 
       } else {
         setStatus('Помилка при замовленні дзвінка.');
+        setTimeout(() => setStatus(''), 4000); 
       }
     } catch (error) {
       console.error('Error submitting form:', error);

@@ -18,7 +18,7 @@ export default async function SolarPanel() {
             className="product-card"
             style={{ cursor: "pointer" }}
           >
-            <a href={`/solar-panels/${encodeURIComponent(panel.name)}`}>
+            <a href={`/solar-panels/${panel.slug}`}>
             <div className="container-image"></div>
               <img
                 src={panel.image_url}
@@ -34,7 +34,7 @@ export default async function SolarPanel() {
               >
                 {panel.status}
               </p>
-              <button className="button-get-panel">Придбати</button>
+              <button className="buy-button">Придбати</button>
             </a>
           </div>
         ))}

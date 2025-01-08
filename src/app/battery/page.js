@@ -18,7 +18,7 @@ export default async function Inverters() {
             className="product-card"
             style={{ cursor: "pointer" }}
           >
-            <a href={`/battery/${encodeURIComponent(battery.name)}`}>
+            <a href={`/battery/${battery.slug}`}>
               <img src={battery.image_url} alt={battery.name} className="product-image" />
               <h2>{battery.name}</h2>
               <p>Цiна: {battery.price}</p>
@@ -29,7 +29,7 @@ export default async function Inverters() {
               >
                 {battery.status}
               </p>
-              <button className="button-get-battery">Придбати</button>
+              <button className="buy-button">Придбати</button>
             </a>
           </div>
         ))}

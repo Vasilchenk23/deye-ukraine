@@ -7,7 +7,7 @@ export default async function InvertorPage({ params }) {
   const { data, error } = await supabase
     .from("inverter")
     .select("*")
-    .eq("name", decodeURIComponent(inverterName)) 
+    .eq("slug", decodeURIComponent(inverterName)) 
     .single();
 
   if (error) {
