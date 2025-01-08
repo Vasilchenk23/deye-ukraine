@@ -138,22 +138,11 @@ export const Header = () => {
 
           .submenu h1 {
             font-size: 14px;
-            position: relative;
-            text-align: start;
-            padding-left: 170px;
             color: hsl(205, 70%, 52%);
           }
           
 
-          .submenu h1::before {
-            content: "•"; 
-            position: absolute;
-            left: 0; 
-            color: #000; 
-            font-size: 18px; 
-            padding-left: 160px;
-            color: hsl(205, 70%, 52%)
-          }
+          
         }
       `}</style>
     </>
