@@ -1036,3 +1036,18 @@ html {
   background-color: hsl(205, 60%, 45%);
 }
 
+
+.telegram {
+  width: 70px;
+  height: 70px;
+}
+
+.instagram {
+  width: 70px;
+  height: 70px;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+}

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 export const Footer = () => {
   const [formData, setFormData] = useState({
@@ -45,6 +46,14 @@ export const Footer = () => {
         <div className="footer-logo">
           <h2>Deye in Ukraine</h2>
           <p>Здійснюємо поставки в Україні із врахуванням ПДВ</p>
+          <div className='social-media'>
+          <a href="https://www.instagram.com/deyeeco/" target="_blank" rel="noopener noreferrer">
+              <Image src="/images/instagram.png" alt="instagram" className="instagram" width={100} height={100} />
+            </a>
+            <a href="https://t.me/@var404" target="_blank" rel="noopener noreferrer">
+              <Image src="/images/telegram.png" alt="telegram" className="telegram" width={100} height={100} />
+            </a>
+          </div>
         </div>
 
         <div className="footer-contacts">
