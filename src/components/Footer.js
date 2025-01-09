@@ -50,7 +50,7 @@ export const Footer = () => {
           <a href="https://www.instagram.com/deyeeco/" target="_blank" rel="noopener noreferrer">
               <Image src="/images/instagram.png" alt="instagram" className="instagram" width={100} height={100} />
             </a>
-            <a href="https://t.me/@DeyeEcoBot" target="_blank" rel="noopener noreferrer">
+            <a href="https://t.me/DeyeEcoBot" target="_blank" rel="noopener noreferrer">
               <Image src="/images/telegram.png" alt="telegram" className="telegram" width={100} height={100} />
             </a>
           </div>
