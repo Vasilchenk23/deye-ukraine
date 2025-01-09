@@ -62,6 +62,7 @@ export const Header = () => {
               <h1 onClick={() => navigateToPage("/accessories")}>Аксесуари</h1>
             </div>
           )}
+          <h1 onClick={() => navigateToPage("/blog")}>Блог</h1>
           <h1 onClick={() => navigateAndScroll("contact")}>Контакти</h1>
         </div>
         <button className="burger-menu" onClick={toggleMenu}>

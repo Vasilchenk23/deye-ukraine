@@ -4,7 +4,7 @@ import Image from "next/image";
 export default async function Goods() {
   const { data, error } = await supabase
     .from("inverter")
-    .select("id, name, status, price, image_url");
+    .select("id, name, status, price, image_url, slug");
 
   if (error) {
     console.error("Ошибка при загрузке данных:", error);
@@ -23,7 +23,7 @@ export default async function Goods() {
       <div className="products">
         {data.map((product) => (
           <div key={product.id} className="product-card">
-            <a href={`/inverters/${encodeURIComponent(product.name)}`} className="product-link">
+            <a href={`/inverters/${encodeURIComponent(product.slug)}`} className="product-link">
               <div>
                 <Image
                   src={product.image_url}
