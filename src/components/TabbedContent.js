@@ -131,37 +131,7 @@ export default function TabbedContent({ data }) {
           </div>
         )}
       </div>
-      {isModalOpen && (
-        <div className="modal" onClick={handleModalClick}>
-          <div className="modal-content">
-            <span className="close" onClick={handleCloseModal}>&times;</span>
-            <h2>Оформлення замовлення</h2>
-            <form onSubmit={handleSubmit}>
-                Ваше ім'я:
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  required
-                  className="nameModal"
-                />
-              <br />
-                Номер телефону:
-                <input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleInputChange}
-                  required
-                   className="phoneModal"
-                />
-              <br />
-              <button type="submit">Оформити замовлення</button>
-            </form>
-          </div>
-        </div>
-      )}
+      
     </div>
   );
 }

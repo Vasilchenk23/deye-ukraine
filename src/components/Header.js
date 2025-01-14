@@ -47,24 +47,16 @@ export const Header = () => {
   return (
     <>
       <header className="header">
-        <div className="logo-item" id="main">
-          <Image src="/images/logo.png" alt="Logo" width={140} height={54} />
-        </div>
-        <div className={`item-menu ${menuOpen ? "menu-open" : ""}`}>
+        <a href="/" aria-label="Головна" className="logo-item" id="main">
+          <Image src="/images/logo.png" alt="Logo" width={140} height={54} loading="lazy"/>
+        </a>
+        <nav className={`item-menu ${menuOpen ? "menu-open" : ""}`}>
           <h1 onClick={() => navigateToPage("/")}>Головна</h1>
           <h1 onClick={() => navigateAndScroll("solution")}>Рiшення</h1>
-          <h1 onClick={toggleProductsMenu}>Продукцiя</h1>
-          {productsMenuOpen && (
-            <div className="submenu">
-              <h1 onClick={() => navigateToPage("/solar-panels")}>Сонячні панелі</h1>
-              <h1 onClick={() => navigateToPage("/battery")}>Акумулятори</h1>
-              <h1 onClick={() => navigateToPage("/inverters")}>Інвертори</h1>
-              <h1 onClick={() => navigateToPage("/accessories")}>Аксесуари</h1>
-            </div>
-          )}
-          <h1 onClick={() => navigateToPage("/blog")}>Блог</h1>
+          <h1 onClick={() => navigateAndScroll("goods")}>Продукцiя</h1>
+          <h1 onClick={() => navigateAndScroll("blog")}>Блог</h1>
           <h1 onClick={() => navigateAndScroll("contact")}>Контакти</h1>
-        </div>
+        </nav>
         <button className="burger-menu" onClick={toggleMenu}>
           {menuOpen ? <IoClose size={40} /> : <IoMdMenu size={40} />}
         </button>

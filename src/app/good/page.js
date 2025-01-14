@@ -1,7 +1,7 @@
 import { supabase } from "@/db/supabaseClient";
 
 export default async function Inverters() {
-  const { data, error } = await supabase.from("inverter").select("*");
+  const { data, error } = await supabase.from("good").select("*");
 
   if (error) {
     console.error("Ошибка при загрузке данных:", error);

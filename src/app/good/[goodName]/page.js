@@ -2,12 +2,12 @@ import { supabase } from "@/db/supabaseClient";
 import TabbedContent from "@/components/TabbedContent";
 
 export default async function InvertorPage({ params }) {
-  const { inverterName } = await params;
+  const { goodName } = await params;
 
   const { data, error } = await supabase
-    .from("inverter")
+    .from("good")
     .select("*")
-    .eq("slug", decodeURIComponent(inverterName)) 
+    .eq("slug", decodeURIComponent(goodName)) 
     .single();
 
   if (error) {

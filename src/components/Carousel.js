@@ -17,7 +17,7 @@ export const Carousel = ({ data }) => {
 
   return (
     <div className="carousel">
-      <BsArrowLeftCircleFill onClick={prevSlide} className="arrow arrow-left" />
+      <BsArrowLeftCircleFill onClick={prevSlide} className="arrow arrow-left" aria-label="Предыдущий слайд"/>
       {data.map((item, idx) => {
         return (
           <Image
@@ -26,6 +26,7 @@ export const Carousel = ({ data }) => {
             src={item.src}
             alt={item.alt}
             key={idx}
+            loading="lazy"
             className={slide === idx ? "slide" : "slide slide-hidden"}
           />
         );
@@ -33,6 +34,7 @@ export const Carousel = ({ data }) => {
       <BsArrowRightCircleFill
         onClick={nextSlide}
         className="arrow arrow-right"
+        aria-label="Следующий слайд"
       />
       <span className="indicators">
         {data.map((_, idx) => {
@@ -42,6 +44,7 @@ export const Carousel = ({ data }) => {
               className={
                 slide === idx ? "indicator" : "indicator indicator-inactive"
               }
+              aria-label={`Переключиться на слайд ${idx + 1}`}
               onClick={() => setSlide(idx)}
             ></button>
           );

@@ -421,8 +421,10 @@ html {
 
 .product-image {
   width: 100%;
-  height: auto;
+  /* height: auto; */
   border-radius: 8px;
+  height: 300px;
+  /* border: 1px solid red; */
 }
 
 .buy-button {
@@ -780,7 +782,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
 }
 
 .button-get-invertot {
@@ -1051,3 +1052,31 @@ html {
   display: flex;
   align-items: center;
 }
+
+.product-title {
+  font-size: 16px;
+}
+
+.toggle-description-text {
+  color: gray;
+  cursor: pointer;
+  font-size: 0.9em;
+  margin-top: 10px;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+
+.toggle-description-text:hover {
+  color: #6c757d;
+  text-decoration: underline;
+}
+
+.product-description {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.product-description p {
+  text-align: left;
+}
+

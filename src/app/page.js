@@ -1,7 +1,7 @@
 import { Carousel } from "../components/Carousel";
 import { Solution } from "../components/Solution";
 import { Goals } from "../components/Goals";
-import Goods from "../components/Goods";
+import Good from "../components/Good";
 import { Contact } from "../components/Contact";
 import  Blog  from "@/components/Blog";
 import carouselData from "@/data/carouselData.json"
@@ -14,7 +14,7 @@ export default function Home() {
       <Carousel data={slides} /> 
       <Solution/>
       <Goals/>
-      <Goods/>
+      <Good/>
       <Blog/>
       <Contact/>
     </div>
