@@ -13,7 +13,7 @@ export default async function Blog () {
     return(
         <>
         <div className="blog-container">
-            <h1 id="blog">Блогш</h1>
+            <h1 id="blog">Блог</h1>
             <div className="cards">
                 {data.map((blog) => (
                     <div key={blog.id} className="card">
