@@ -811,7 +811,7 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #4CAF50; 
+  background-color: hsl(205, 70%, 52%); 
   color: white;
   padding: 20px;
   border-radius: 5px;
@@ -820,6 +820,23 @@ html {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 9999;
 }
+
+.status-message button {
+  background-color: #fff;
+  color: hsl(205, 70%, 52%);
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.status-message button:hover {
+  background-color: hsl(180, 7%, 94%);
+  transform: scale(1.05);
+}
+
 
 .button-get-panel {
   padding: 10px 20px;

@@ -6,6 +6,7 @@ import Image from "next/image";
 export default function GoodsClient({ products }) {
   const [activeCard, setActiveCard] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [status, setStatus] = useState('');
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [formData, setFormData] = useState({
     name: "",
@@ -53,14 +54,15 @@ export default function GoodsClient({ products }) {
       });
 
       if (response.ok) {
+        setStatus("Зачекайте, зараз вам зателефонують :)");
         setFormData({ name: "", phone: "" });
-        alert("Зачекайте, зараз вам зателефонують :)");
         handleCloseModal();
       } else {
-        alert("Помилка :(");
+        setStatus('Помилка при замовленні дзвінка.');
       }
     } catch (error) {
-      console.error("Error submitting form:", error);
+      console.error('Error submitting form:', error);
+      setStatus('Помилка сервера.');
     }
   };
 
@@ -141,6 +143,12 @@ export default function GoodsClient({ products }) {
               <button type="submit">Оформити замовлення</button>
             </form>
           </div>
+        </div>
+      )}
+      {status && (
+        <div className="status-message">
+          <p>{status}</p>
+          <button onClick={() => handleCloseModal(setStatus(false))}>Закрити</button>
         </div>
       )}
     </div>

@@ -30,10 +30,8 @@ export const Contact = () => {
       if (response.ok) {
         setStatus('Зараз Вам зателефонують!');
         setFormData({ name: '', email: '', phone: '', message: '' });
-        setTimeout(() => setStatus(''), 4000); 
       } else {
         setStatus('Помилка при замовленні дзвінка.');
-        setTimeout(() => setStatus(''), 4000); 
       }
     } catch (error) {
       console.error('Error submitting form:', error);
@@ -87,6 +85,7 @@ export const Contact = () => {
       {status && (
         <div className="status-message">
           <p>{status}</p>
+          <button onClick={() => handleCloseModal(setStatus(false))}>Закрити</button>
         </div>
       )}
     </div>
