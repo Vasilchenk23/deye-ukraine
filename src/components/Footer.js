@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Image from 'next/image';
+import MultipleMarkersMap from './MultipleMarkersMap';
 
 export const Footer = () => {
   const [formData, setFormData] = useState({
@@ -56,12 +57,14 @@ export const Footer = () => {
 
         <div className="footer-contacts">
           <h3>Контакти</h3>
+          <p>📍 вул. Віктора Некрасова (колиш. Північно-Сирецька), 49В</p>
+          <p>📞 050-301-13-05</p>
+          <p>📞 093-170-00-18</p>
           <p>📍 пров. Вишневий, 3, Харкiв, Україна</p>
-          <p>📞 050-343-14-14</p>
-          <p>📞 050-343-91-20</p>
-          <p>📧 designer.didro@gmail.com</p>
+          <p>📞 050-325-62-64</p>
+          <p>📞 057-728-50-00</p>
+          <p>📧 designer@gmail.com</p>
         </div>
-
         <div className="footer-callback">
           <h3>Замовити зворотній дзвінок</h3>
           <form className="callback-form" onSubmit={handleSubmit}>
@@ -94,6 +97,7 @@ export const Footer = () => {
           <button onClick={() => handleCloseModal(setStatus(false))}>Закрити</button>
         </div>
       )}
+      <MultipleMarkersMap/>
     </footer>
   );
 };

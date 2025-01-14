@@ -54,7 +54,7 @@ export default function GoodsClient({ products }) {
       });
 
       if (response.ok) {
-        setStatus("Зачекайте, зараз вам зателефонують :)");
+        setStatus("Ваше замовлення прийнято! Чекайте на дзвінок менеджера!");
         setFormData({ name: "", phone: "" });
         handleCloseModal();
       } else {
