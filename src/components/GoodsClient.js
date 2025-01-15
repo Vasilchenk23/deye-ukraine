@@ -88,7 +88,7 @@ export default function GoodsClient({ products }) {
                 >
                   {product.status}
                 </p>
-                <p className="product-price">Цiна: {product.price} грн</p>
+                <p className="product-price">Ціна з ПДВ: {product.price} грн</p>
               </div>
             {/* </a> */}
             <p
