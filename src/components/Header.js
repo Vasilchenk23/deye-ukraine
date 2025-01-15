@@ -52,9 +52,9 @@ export const Header = () => {
         </a>
         <nav className={`item-menu ${menuOpen ? "menu-open" : ""}`}>
           <h1 onClick={() => navigateAndScroll("header")}>Головна</h1>
-          <h1 onClick={() => navigateAndScroll("solution")}> Наші переваги</h1>
+          <h1 onClick={() => navigateAndScroll("advantages")}>Наші переваги</h1>
           <h1 onClick={() => navigateAndScroll("solution")}>Рiшення</h1>
-          <h1 onClick={() => navigateAndScroll("why-me")}> Чому ми?</h1>
+          <h1 onClick={() => navigateAndScroll("why-us")}>Чому ми?</h1>
           <h1 onClick={() => navigateAndScroll("goods")}>Продукцiя</h1>
           <h1 onClick={() => navigateAndScroll("blog")}>Блог</h1>
           <h1 onClick={() => navigateAndScroll("contact")}>Контакти</h1>

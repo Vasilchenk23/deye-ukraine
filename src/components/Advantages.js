@@ -1,6 +1,6 @@
 const Advantages = () => {
     return (
-      <div className="container">
+      <div className="container" id="advantages">
         <h2 className="title">Наші переваги</h2>
         <div className="blocks">
           <div className="block">

@@ -1,6 +1,6 @@
 const WhyUs = () => {
   return (
-    <div className="container">
+    <div className="container" id="why-us">
       <h2 className="title">Чому працюють з нами</h2>
       <div className="blocks">
         <div className="block">
