@@ -1,6 +1,7 @@
 import { Carousel } from "../components/Carousel";
 import { Solution } from "../components/Solution";
-import { Goals } from "../components/Goals";
+import WhyUs from "../components/WhyUs";
+import Advantages from "@/components/Advantages";
 import Good from "../components/Good";
 import { Contact } from "../components/Contact";
 import  Blog  from "@/components/Blog";
@@ -12,8 +13,9 @@ export default function Home() {
   return (
     <div>
       <Carousel data={slides} /> 
+      <Advantages/>
       <Solution/>
-      <Goals/>
+      <WhyUs/>
       <Good/>
       <Blog/>
       <Contact/>
