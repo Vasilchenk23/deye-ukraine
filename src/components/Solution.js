@@ -21,7 +21,7 @@ export const Solution = () => {
         <meta property="og:image" content="/images/deye.png" />
         <meta property="og:url" content="https://deye-ukraine.vercel.app/solution" />
       </Head>
-      <main className="block-deye" id="solution">
+      <main className="block-deye" id="header">
         <div className="goal-deye">
           <h1>ПЕРЕВАГИ ВИКОРИСТАННЯ IНВЕНТОРIВ DEYE</h1>
           <ul>
@@ -32,9 +32,9 @@ export const Solution = () => {
           </ul>
           <br />
           <br />
-          <nav className="item-button">
+          {/* <nav className="item-button">
            <a href="/blog/batteries-for-solar-panels-how-to-ensure-uninterrupted-power-supply"><button className="btn-primary">Докладнiше</button></a> 
-          </nav>
+          </nav> */}
         </div>
         <div className="image-company-deye">
           <Image className="deye-company" src="/images/deye.png" width={250} height={201} alt="deye" />
