@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Deye Power – Сонячні рішення для вашого бiзнесу",
+  title: "Deye Power – Сонячні рішення для вашого бiзнесу.",
   description: "Deye Power – надійні сонячні панелі, інвертори та акумулятори для енергетичного комфорту.",
   openGraph: {
     title: "Deye Power – Сонячні рішення для вашого бiзнесу",
