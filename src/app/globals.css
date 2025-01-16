@@ -744,6 +744,14 @@ html {
 
   }
 
+  .contact-input {
+    width: 94%;
+    display: flex;
+  }
+  .contact-textarea {
+    width: 94%;
+  }
+
   .panel-image {
     width: 100%; 
   }

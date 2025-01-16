@@ -46,9 +46,9 @@ export const Footer = () => {
           <h2>Deye in Ukraine</h2>
           <p>Здійснюємо поставки в Україні із врахуванням ПДВ</p>
           <div className='social-media'>
-          <a href="https://www.instagram.com/deyeeco/" target="_blank" rel="noopener noreferrer">
+          {/* <a href="https://www.instagram.com/deyeeco/" target="_blank" rel="noopener noreferrer">
               <Image src="/images/instagram.png" alt="instagram" className="instagram" width={100} height={100} />
-            </a>
+            </a> */}
             <a href="https://t.me/DeyeEcoBot" target="_blank" rel="noopener noreferrer">
               <Image src="/images/telegram.png" alt="telegram" className="telegram" width={100} height={100} />
             </a>
@@ -88,9 +88,6 @@ export const Footer = () => {
           </form>
         </div>
       </div>
-      <div className="footer-bottom">
-        <p>© DeyeUkraine 2025</p>
-      </div>
       {status && (
         <div className="status-message">
           <p>{status}</p>
@@ -98,6 +95,9 @@ export const Footer = () => {
         </div>
       )}
       <MultipleMarkersMap/>
+      <div className="footer-bottom">
+        <p>© DeyeUkraine 2025</p>
+      </div>
     </footer>
   );
 };

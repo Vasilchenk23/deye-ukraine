@@ -14,18 +14,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Deye Eco – Сонячні рішення для вашого бiзнесу",
-  description: "Deye Eco – надійні сонячні панелі, інвертори та акумулятори для енергетичного комфорту.",
+  title: "Deye Power – Сонячні рішення для вашого бiзнесу",
+  description: "Deye Power – надійні сонячні панелі, інвертори та акумулятори для енергетичного комфорту.",
   openGraph: {
-    title: "Deye Eco – Сонячні рішення для вашого бiзнесу",
-    description: "Високоякісні сонячні панелі, інвертори та акумулятори від Deye Eco.",
+    title: "Deye Power – Сонячні рішення для вашого бiзнесу",
+    description: "Високоякісні сонячні панелі, інвертори та акумулятори від Deye Power.",
     url: "https://www.deyepower.com.ua/",
     images: [
       {
         url: "/images/slider.png",
         width: 1200,
         height: 630,
-        alt: "Deye Eco – Сонячні рішення для вашого бiзнесу",
+        alt: "Deye Power – Сонячні рішення для вашого бiзнесу",
       },
     ],
   },
