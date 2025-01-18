@@ -27,6 +27,7 @@ export const Carousel = ({ data }) => {
             alt={item.alt}
             key={idx}
             loading="lazy"
+            style={{ objectFit: "contain", width: "100%", height: "auto" }}
             className={slide === idx ? "slide" : "slide slide-hidden"}
           />
         );

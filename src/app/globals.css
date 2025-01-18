@@ -176,8 +176,8 @@ html {
 
 .slide {
   border-radius: 0.5rem;
-  width: 120%;
-  height: 80%; 
+  width: 80%;
+  height: 110%; 
   object-fit: cover; 
 }
 
