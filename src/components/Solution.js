@@ -32,6 +32,9 @@ export const Solution = () => {
           </ul>
           <br />
           <br />
+          {/* <nav className="item-button">
+           <a href="/blog/batteries-for-solar-panels-how-to-ensure-uninterrupted-power-supply"><button className="btn-primary">Докладнiше</button></a> 
+          </nav> */}
         </div>
         <div className="image-company-deye">
           <Image className="deye-company" src="/images/deye.png" width={250} height={201} alt="deye" />

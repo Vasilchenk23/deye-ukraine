@@ -1,5 +1,5 @@
 import { supabase } from "@/db/supabaseClient";
-import Goods from "@/components/Goods";
+import GoodsClient from "@/components/GoodsClient";
 
 export default async function Good() {
   const { data, error } = await supabase
@@ -11,5 +11,5 @@ export default async function Good() {
     return <div>Ошибка загрузки данных</div>;
   }
 
-  return <Goods products={data} />;
+  return <GoodsClient products={data} />;
 }
