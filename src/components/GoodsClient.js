@@ -19,6 +19,8 @@ export default function GoodsClient({ products }) {
     return "black";
   };
 
+  const exchangeRate = 42.80;
+
   const toggleDescription = (id) => {
     setActiveCard((prevActive) => (prevActive === id ? null : id));
   };
@@ -66,6 +68,10 @@ export default function GoodsClient({ products }) {
     }
   };
 
+    const formatPrice = (price) => {
+      return new Intl.NumberFormat('uk-UA').format(price.toFixed(2));
+    };
+
   return (
     <div className="goods-container">
       <h1 id="goods">Товари</h1>
@@ -88,7 +94,7 @@ export default function GoodsClient({ products }) {
                 >
                   {product.status}
                 </p>
-                <p className="product-price">Ціна з ПДВ: {product.price} грн</p>
+                <p className="product-price"> Ціна з ПДВ: {formatPrice(product.price * exchangeRate)} грн</p>
               </div>
             {/* </a> */}
             <p
