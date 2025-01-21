@@ -20,5 +20,6 @@ export default function BlogTabble({ data }) {
         <ReactMarkdown>{data.description_blog}</ReactMarkdown>
       </div>
     </div>
+    
   );
 }

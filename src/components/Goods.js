@@ -23,7 +23,6 @@ export default async function Goods() {
       <div className="products">
         {data.map((product) => (
           <div key={product.id} className="product-card">
-            {/* <a href={`/good/${encodeURIComponent(product.slug)}`} className="product-link"> */}
               <div>
                 <Image
                   src={product.image_url}
@@ -39,7 +38,6 @@ export default async function Goods() {
                 <p className="product-price">Ціна з ПДВ: {product.price} грн</p>
               </div>
             <button className="buy-button">Купити</button>
-            {/* </a> */}
           </div>
         ))}
       </div>
