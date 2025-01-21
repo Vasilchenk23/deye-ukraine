@@ -64,7 +64,7 @@ export const Footer = () => {
           📞 <a href="tel:+380679180515" style={{ textDecoration:'underline'}}>067-91-80-515</a>
           <br></br>
           <br></br>
-          📧 <a href="mailto:o.dereguz@promdesign.ua" style={{ textDecoration:'underline'}}>o.dereguz@promdesign.ua</a>
+          📧 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=o.dereguz@promdesign.ua" style={{ textDecoration:'underline'}}>o.dereguz@promdesign.ua</a>
         </div>
         <div className="footer-callback">
           <h3>Замовити зворотній дзвінок</h3>
