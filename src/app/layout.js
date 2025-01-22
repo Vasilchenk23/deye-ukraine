@@ -57,6 +57,11 @@ export default function RootLayout({ children }) {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'AW-16830451066');
+          gtag('event', 'conversion', {
+            'send_to': 'AW-16830451066/HEB_CKvg1Y0aEPqasdk-',
+            'value': 1.0,
+            'currency': 'UAH'
+          });
         `}
       </Script>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
