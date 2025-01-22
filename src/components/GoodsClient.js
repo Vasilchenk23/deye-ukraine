@@ -72,11 +72,13 @@ export default function GoodsClient({ products }) {
       return new Intl.NumberFormat('uk-UA').format(price.toFixed(2));
     };
 
+    const sortedProducts = [...products].sort((a, b) => b.price - a.price);
+
   return (
     <div className="goods-container">
       <h1 id="goods">Товари</h1>
       <div className="products">
-        {products.map((product) => (
+        {sortedProducts.map((product) => (
           <div key={product.id} className="product-card">
             {/* <a href={`/good/${encodeURIComponent(product.slug)}`} className="product-link"> */}
               <div>
