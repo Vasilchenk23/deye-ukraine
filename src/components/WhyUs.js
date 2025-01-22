@@ -16,7 +16,7 @@ const WhyUs = () => {
         <div className="block">
           <div className="icon">💡</div>
           <h3 className="block-title">Маємо власний досвід</h3>
-          <p className="block-description">Ділимося досвідом і допомагаємо вибрати найкраще.</p>
+          <p className="block-description">Наша велика компанія PromDesign</p>
         </div>
       </div>
     </div>
