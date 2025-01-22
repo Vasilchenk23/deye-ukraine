@@ -44,6 +44,7 @@ export default function RootLayout({ children }) {
         <meta property="og:image:width" content={metadata.openGraph.images[0].width} />
         <meta property="og:image:height" content={metadata.openGraph.images[0].height} />
         <meta property="og:image:alt" content={metadata.openGraph.images[0].alt} />
+        <meta name="google-site-verification" content="cp4VE_lxYv1rEvbWq16NBxWRiONajWChBBojyNSKs8M" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header />
