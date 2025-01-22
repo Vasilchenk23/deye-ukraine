@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
         <meta name="google-site-verification" content="cp4VE_lxYv1rEvbWq16NBxWRiONajWChBBojyNSKs8M" />
       </head>
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-5N86Y4HLF3"
+        src="https://www.googletagmanager.com/gtag/js?id=AW-16830451066"
         strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">
@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-5N86Y4HLF3');
+          gtag('config', 'AW-16830451066');
         `}
       </Script>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>

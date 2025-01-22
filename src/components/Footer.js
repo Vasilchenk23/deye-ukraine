@@ -45,7 +45,7 @@ export const Footer = () => {
         <div className="footer-logo">
           <h2>Deye in Ukraine</h2>
           <p>Здійснюємо поставки в Україні із врахуванням ПДВ💰</p>
-          <p>Наша велика компанія:<a href="https://promdesign.ua/" style={{textDecoration:"underline"}}>https://promdesign.ua/</a>😉</p>
+          <p>Наша велика компанія:<a target='_blank' href="https://promdesign.ua/" style={{textDecoration:"underline"}}>https://promdesign.ua/</a>😉</p>
           <div className='social-media'>
           {/* <a href="https://www.instagram.com/deyeeco/" target="_blank" rel="noopener noreferrer">
               <Image src="/images/instagram.png" alt="instagram" className="instagram" width={100} height={100} />
