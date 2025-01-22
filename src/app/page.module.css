@@ -214,6 +214,7 @@ body {
 
 .logo-item img {
   max-height: 50px;
+  border: 1px solid red;
 }
 
 .item-menu {

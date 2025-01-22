@@ -47,8 +47,8 @@ export const Header = () => {
   return (
     <>
       <header className="header" id="header">
-        <a href="/" aria-label="Головна" className="logo-item" id="main">
-          <Image src="/images/logo.png" alt="Logo" width={140} height={54} loading="lazy"/>
+        <a href="/" aria-label="Головна" id="main">
+          <Image src="/images/logo.png" alt="Logo" style={{ height:'auto', width:'auto'}} width={140} height={54} loading="lazy"/>
         </a>
         <nav className={`item-menu ${menuOpen ? "menu-open" : ""}`}>
           <h1 onClick={() => navigateAndScroll("header")}>Головна</h1>
