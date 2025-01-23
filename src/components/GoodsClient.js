@@ -1,9 +1,31 @@
 "use client";
-
+import Head from "next/head";
 import { useState } from "react";
 import Image from "next/image";
 
 export default function GoodsClient({ products }) {
+  <Head>
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": products.name,
+        "image": products.image_url,
+        "description": products.description,
+        "sku": products.id,
+        "offers": {
+          "@type": "Offer",
+          "price": products.price,
+          "priceCurrency": "UAH",
+          "availability": "https://schema.org/InStock",
+          "url": `https://www.deypower.com.ua/good/${products.slug}`,
+        },
+      }),
+    }}
+  />
+</Head>
   const [activeCard, setActiveCard] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [status, setStatus] = useState('');
