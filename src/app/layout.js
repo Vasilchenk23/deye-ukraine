@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
         <meta name="google-site-verification" content="cp4VE_lxYv1rEvbWq16NBxWRiONajWChBBojyNSKs8M" />
       </head>
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=AW-16830451066"
+        src="https://www.googletagmanager.com/gtag/js?id=G-MRQG4MGB7L"
         strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">
@@ -58,9 +58,9 @@ export default function RootLayout({ children }) {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'AW-16830451066');
+          gtag('config', 'G-MRQG4MGB7L');
           gtag('event', 'conversion', {
-            'send_to': 'AW-16830451066/HEB_CKvg1Y0aEPqasdk-',
+            'send_to': 'G-MRQG4MGB7L/HEB_CKvg1Y0aEPqasdk-',
             'value': 1.0,
             'currency': 'UAH'
           });
