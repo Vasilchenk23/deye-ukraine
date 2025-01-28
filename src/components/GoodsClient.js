@@ -5,10 +5,15 @@ import Image from "next/image";
 
 export default function GoodsClient({ products }) {
   <Head>
-    <meta
-      name="keywords"
-      content="Deye, Jinko, Дейя, Дейе, Джинко, сонячні панелі Deye, інвертори Deye, батареї Jinko, сонячні станції, купити Deye, купити Jinko, Дейя інвертор, Джинко панелі"
-    />
+    <title>Купити інвертори Deye та панелі Jinko в Україні | DeyPower</title>
+  <meta
+    name="description"
+    content="Широкий вибір сонячних інверторів Deye та панелей Jinko. Гарантія якості, вигідні ціни, доставка по Україні. Замовляйте онлайн на DeyPower."
+  />
+  <meta
+    name="keywords"
+    content="Deye, Jinko, інвертори Deye, панелі Jinko, сонячні панелі, купити інвертор, купити сонячні панелі, Дейе, Джинко, сонячні станції, відновлювальна енергія"
+  />
   <script
     type="application/ld+json"
     dangerouslySetInnerHTML={{
