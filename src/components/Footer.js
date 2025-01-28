@@ -62,7 +62,8 @@ export const Footer = () => {
           <p>📞 050-301-13-05</p>
           <p>📞 093-170-00-18</p> */}
           <p>📍 пров. Вишневий, 3, Харкiв, Україна</p>
-          📞 <a href="#" style={{ textDecoration:'underline'}}>050 325 62 64</a>
+          📞 <a style={{ textDecoration:'underline'}}>050 325 62 64</a>
+          <br/>
           📞 <a href="tel:+380675750556" style={{ textDecoration:'underline'}}>067 575 05 56</a>
           <br></br>
           <br></br>
