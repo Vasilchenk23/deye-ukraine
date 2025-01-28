@@ -5,6 +5,10 @@ import Image from "next/image";
 
 export default function GoodsClient({ products }) {
   <Head>
+    <meta
+      name="keywords"
+      content="Deye, Jinko, Дейя, Дейе, Джинко, сонячні панелі Deye, інвертори Deye, батареї Jinko, сонячні станції, купити Deye, купити Jinko, Дейя інвертор, Джинко панелі"
+    />
   <script
     type="application/ld+json"
     dangerouslySetInnerHTML={{
