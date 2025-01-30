@@ -16,7 +16,7 @@ const Advantages = () => {
           <div className="block">
             <div className="icon">🏢</div>
             <h3 className="block-title">Сервісний центр в Україні</h3>
-            <p className="block-description">Обслуговуємо клієнтів безпосередньо в нашому центрі.</p>
+            <p className="block-description">Наявність офіційного сервісу DEYE в Україні.</p>
           </div>
         </div>
       </div>
