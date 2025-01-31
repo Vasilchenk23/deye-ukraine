@@ -50,7 +50,7 @@ export default function GoodsClient({ products }) {
     return "black";
   };
 
-  const exchangeRate = 42.80;
+  const exchangeRate = 42.40;
 
   const toggleDescription = (id) => {
     setActiveCard((prevActive) => (prevActive === id ? null : id));
