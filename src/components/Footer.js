@@ -11,6 +11,11 @@ export const Footer = () => {
 
   const [status, setStatus] = useState('');
 
+  const handleCloseModal = (setStatus) => {
+    setStatus('');
+  };
+  
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -95,7 +100,7 @@ export const Footer = () => {
       {status && (
         <div className="status-message">
           <p>{status}</p>
-          <button onClick={() => handleCloseModal(setStatus(false))}>Закрити</button>
+          <button onClick={() => handleCloseModal(setStatus)}>Закрити</button>
         </div>
       )}
       <MultipleMarkersMap/>

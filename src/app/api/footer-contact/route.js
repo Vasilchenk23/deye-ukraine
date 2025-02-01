@@ -1,9 +1,10 @@
+
 import nodemailer from 'nodemailer';
 
 export async function POST(req) {
   const { name, phone } = await req.json();
 
-  if (!name || !phone) {
+  if (!name || !phone ) {
     return new Response(JSON.stringify({ error: 'All fields are required' }), { status: 400 });
   }
 
@@ -21,13 +22,38 @@ export async function POST(req) {
     await transporter.sendMail({
       from: process.env.EMAIL,
       to: process.env.EMAIL, 
-      subject: `Новое сообщение от ${name}`,
-      text: `Имя: ${name}\nТелефон: ${phone}\n`,
+      subject: `🛒 Новое сообщение от ${name}`,
+      html: `
+        <h2>🛍️ Новый вопрос от клиента</h2>
+        <p><strong>Имя:</strong> ${name} 👤</p>
+        <p><strong>Телефон:</strong> ${phone} 📞</p>
+      `,
+    });
+
+    const botToken = process.env.TELEGRAM_BOT_TOKEN;
+    const chatId = process.env.TELEGRAM_CHAT_ID;
+    const telegramMessage = `
+          🛍️ <b>Новый вопрос от клиента</b>
+          👤<b>Имя:</b> ${name}
+          📞<b>Телефон:</b> ${phone}
+          `;
+
+    await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        chat_id: chatId,
+        text: telegramMessage,
+        parse_mode: 'HTML',
+      }),
     });
 
     return new Response(JSON.stringify({ success: true }), { status: 200 });
   } catch (error) {
-    console.error('Error sending email:', error);
-    return new Response(JSON.stringify({ error: 'Failed to send email' }), { status: 500 });
+    console.error('Error sending email or Telegram message:', error);
+    return new Response(JSON.stringify({ error: 'Failed to send email or Telegram message' }), { status: 500 });
   }
 }
+
